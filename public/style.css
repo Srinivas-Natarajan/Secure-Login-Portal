@@ -21,6 +21,10 @@ body {
   text-decoration: none;
 }
 
+.btn:focus{
+  border-radius: 5rem;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -61,6 +65,15 @@ body {
   margin-bottom: 2rem;
   font-weight: 300;
   text-shadow: 1px 1px 1px #d4d9d6;
+}
+
+.card-success{
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 3rem;
+  text-shadow: 1px 1px 1px #d4d9d6;
+  top: 50%;
 }
 
 .card-signin .card-body {
