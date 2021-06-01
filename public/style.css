@@ -3,13 +3,37 @@
   --input-padding-y: 0.75rem;
 }
 
-body {
-  background: #007bff;
-  background: linear-gradient(to right, #0062e6, #33aeff);
+html{
+  height: 100%;
 }
+
+body {
+  background-image: url("./images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.btn{
+  background-color: #1c88bf;
+  background-image: none;
+  text-decoration: none;
+}
+
 .container {
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
   justify-content: center;
+}
+.row{
+  height: 100vh;
+}
+.d-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
+  align-items: center!important;
 }
 
 .card-signin {
@@ -18,18 +42,41 @@ body {
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
+.temp{
+  margin: auto;
+  padding-left: 20px;
+  align-self: center;
+  margin-top: 18%;
+}
+
 .card-signin .card-title {
+  margin-bottom: 0.9rem;
+  font-weight: 400;
+  font-size: 3rem;
+  text-shadow: 1px 1px 1px #d4d9d6;
+
+}
+
+.card-sub{
   margin-bottom: 2rem;
   font-weight: 300;
-  font-size: 3rem;
+  text-shadow: 1px 1px 1px #d4d9d6;
 }
 
 .card-signin .card-body {
   padding: 2rem;
 }
 
+.card-body{
+  background: whitesmoke;
+  box-shadow: 1px 3px 1px #d4d9d6;
+  height: 27rem;
+}
+
+
 .form-signin {
   width: 100%;
+  /*padding-top: 2rem;*/
 }
 
 .form-signin .btn {
@@ -124,5 +171,10 @@ body {
   }
   .form-label-group input:-ms-input-placeholder {
     color: #777;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .temp{
+    margin-top: 45%;
   }
 }
